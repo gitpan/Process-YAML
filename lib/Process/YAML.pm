@@ -15,7 +15,7 @@ use Params::Util qw/_INSTANCE/;
 
 use vars qw{$VERSION};
 BEGIN {
-	$VERSION = '0.01';
+	$VERSION = '0.02';
 }
 
 BEGIN {
@@ -138,9 +138,11 @@ will need to inherit from both.
 Objects that inherit from C<Process::YAML> must follow the C<new>,
 C<prepare>, C<run> rules of L<Process::Serializable>.
 
-L<YAML::Syck> was chosen over L<YAML> because L<YAML::Syck> is much faster
-and in particular because L<YAML> uses L<Spiffy> which is no good in production
-code.
+L<YAML::Syck> was chosen over L<YAML> because L<YAML::Syck> is much faster.
+Furthermore, L<YAML> uses L<Spiffy> which I could not get to play well with
+the inheritance scheme of the L<Process> framework at the time (Spiffy 0.26).
+By now, Brian Ingerson has released a fixed version of Spiffy (0.27), so
+C<YAML> 0.52 and higher is compatible with Process::YAML.
 
 =head2 METHODS
 
