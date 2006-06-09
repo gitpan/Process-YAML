@@ -1,5 +1,8 @@
 Revision history for Perl extension Process::YAML.
 
+0.03  Fri Jun  9 2006
+	- Upgraded to Module::Install 0.63.
+
 0.02  Wed Jan 18 23:17:30 2006
 	- Documentation fix clarifying statements about the use of
 	  YAML::Syck over YAML+Spiffy

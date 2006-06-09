@@ -17,3 +17,4 @@ t/00podcover.t
 t/01compile.t
 t/02yaml.t
 t/lib/MyYAMLProcess.pm
+SIGNATURE                                Public-key signature (added by MakeMaker)

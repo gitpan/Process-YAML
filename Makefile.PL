@@ -10,4 +10,4 @@ build_requires 'File::Remove' => 0;
 build_requires 'Test::More'   => '0.47';
 
 #auto_install;
-WriteAll;
+WriteAll(sign=>1);
