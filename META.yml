@@ -6,7 +6,7 @@ build_requires:
   File::Temp: 0
   Test::More: 0.47
 distribution_type: module
-generated_by: Module::Install version 0.63
+generated_by: Module::Install version 0.64
 license: perl
 name: Process-YAML
 no_index: 
@@ -17,4 +17,4 @@ requires:
   Process: 0.10
   YAML::Syck: 0.24
   perl: 5.005
-version: 0.03
+version: 0.04
